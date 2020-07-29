@@ -1,1 +1,13 @@
-<view-loading-dialog [message]="data?.message$ | async"></view-loading-dialog>
+<mat-dialog-content class="dialog">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="60px" style="height: 60px; overflow: hidden;">
+      <mat-progress-spinner
+        [diameter]="60"
+        [mode]="'indeterminate'"
+      ></mat-progress-spinner>
+    </div>
+    <p fxFlex="1 1 auto" style="margin: 16px;">
+      {{ message$ | async }}
+    </p>
+  </div>
+</mat-dialog-content>

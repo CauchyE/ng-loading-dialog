@@ -22,8 +22,11 @@ export class LoadingDialogService {
     >(LoadingDialogComponent, { data: { message$ }, disableClose: true });
 
     return {
-      next: (value: string) => message$.next(value),
-      close: () => dialogRef.close(),
+      next: (message: string) => message$.next(message),
+      close: () => {
+        dialogRef.close();
+        message$.complete();
+      },
     };
   }
 }

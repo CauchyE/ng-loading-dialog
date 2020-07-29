@@ -18,7 +18,7 @@ export class LoadingDialogComponent implements OnInit {
   constructor(
     private dialogRef: MatDialogRef<LoadingDialogComponent>,
     @Inject(MAT_DIALOG_DATA)
-    public data?: LoadingDialogComponentData,
+    private data?: LoadingDialogComponentData
   ) {
     this.message$ = data?.message$ ? data.message$ : of('');
   }
@@ -27,7 +27,7 @@ export class LoadingDialogComponent implements OnInit {
     this.data?.message$?.subscribe(
       undefined,
       () => this.closeDialog(),
-      () => this.closeDialog(),
+      () => this.closeDialog()
     );
   }
 
