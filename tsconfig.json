@@ -6,5 +6,12 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/ng-loading-dialog/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ng-loading-dialog/tsconfig.spec.json"
+    }
+]
 }
