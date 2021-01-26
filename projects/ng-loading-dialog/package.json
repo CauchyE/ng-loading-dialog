@@ -1,6 +1,6 @@
 {
   "name": "ng-loading-dialog",
-  "version": "11.0.1",
+  "version": "11.1.0",
   "peerDependencies": {
     "@angular/cdk": "^11.1.0",
     "@angular/common": "^11.1.0",
