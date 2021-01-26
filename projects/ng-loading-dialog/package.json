@@ -2,11 +2,11 @@
   "name": "ng-loading-dialog",
   "version": "11.0.1",
   "peerDependencies": {
-    "@angular/cdk": "^11.0.1",
-    "@angular/common": "^11.0.3",
-    "@angular/core": "^11.0.3",
+    "@angular/cdk": "^11.1.0",
+    "@angular/common": "^11.1.0",
+    "@angular/core": "^11.1.0",
     "@angular/flex-layout": "^11.0.0-beta.33",
-    "@angular/material": "^11.0.1"
+    "@angular/material": "^11.1.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
