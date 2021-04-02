@@ -30,19 +30,17 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/ng-loading-dialog/tsconfig.lib.json",
-              "projects/ng-loading-dialog/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/ng-loading-dialog/**/*.ts",
+              "projects/ng-loading-dialog/**/*.html"
             ]
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
     "analytics": "451bd58b-ca31-40d8-8ca1-393f7cafe9d8"
   },
