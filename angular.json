@@ -44,5 +44,13 @@
   "cli": {
     "analytics": "451bd58b-ca31-40d8-8ca1-393f7cafe9d8"
   },
-  "defaultProject": "ng-loading-dialog"
+  "defaultProject": "ng-loading-dialog",
+  "schematics": {
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    }
+  }
 }
